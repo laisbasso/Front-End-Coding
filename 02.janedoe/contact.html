@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Jane Doe</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Music</a></li>
+                <li><a href="contact.html" class="selected">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Contact</h2>
+        <div class="container">
+            <div class="metade">
+                <form action="" method="POST">
+                    <label for="name" class="txt">Name</label>
+                    <input type="text" name="name" id="name" class="txt" required>
+
+                    <label for="email" class="txt">Email</label>
+                    <input type="email" name="email" id="email" class="txt" required>
+
+                    <label for="message" class="txt">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+
+                    <label class="txt">How did you found Jane's music?</label>
+                    <input type="radio" name="social" id="instagram" value="instagram" required>
+                    <label for="instagram">Instagram</label><br>
+
+                    <input type="radio" name="social" id="facebook" value="facebook">
+                    <label for="facebook">Facebook</label><br>
+
+                    <input type="radio" name="social" id="youtube" value="youtube">
+                    <label for="youtube">Youtube</label><br><br>
+
+                    <input type="checkbox" name="subscribe" id="yes" value="yes" checked>
+                    <label>Do you want to subscribe to our newsletter?</label><br><br>
+
+                    <button type="reset">Reset</button>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+
+            <div class="metade" id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0479761312104!2d-46.677530585021415!3d-23.602612284662385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1588021548675!5m2!1spt-BR!2sbr" width="400" height="347" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3>MANAGEMENT | Karen Blanche</h3>
+            email: <a href="mailto:info@mysite.com" class="link">info@mysite.com</a><br>
+            phone: <a href="tel:123-456-7890" class="link">123-456-7890</a>
+        </div>
+
+        <div class="contact">       
+            <h3>BOOKING | Daniel Ku</h3>
+            email: <a href="mailto:info@mysite.com" class="link">info@mysite.com</a><br>
+            phone: <a href="tel:123-456-7890" class="link">123-456-7890</a>
+        </div>
+
+        <div class="contact">       
+            <h3>LABEL | Wix Records, Jake Coldham</h3>
+            email: <a href="mailto:info@mysite.com" class="link">info@mysite.com</a><br>
+            phone: <a href="tel:123-456-7890" class="link">123-456-7890</a>
+        </div>
+
+        <div class="contact">       
+            <h3>PR | That Girl Pr, Sarah Brookstone</h3>
+            email: <a href="mailto:info@mysite.com" class="link">info@mysite.com</a><br>
+            phone: <a href="tel:123-456-7890" class="link">123-456-7890</a>
+        </div>
+    </section>
+
+    <footer>
+        Copyright - Jane Doe
+    </footer>
+
+</body>
+</html>
