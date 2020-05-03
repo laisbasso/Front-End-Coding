@@ -6,8 +6,9 @@
     font-weight: 400;
 }
 
+
 html, body{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: 0;
     background-color: #000000;
@@ -24,11 +25,16 @@ h1{
     color: white;
 }
 
+h2{
+    margin: 0;
+    font-size: 1em;
+}
+
 
 div{
     display: inline; /*?????????*/
     float: left;
-    height: 100%;
+    height: 100vh;
 }
 
 /* LEFT */
@@ -36,7 +42,9 @@ div{
 .left{
     background-color: rgb(89, 79, 235);
     width: 20%;
+    height: 100vh;
     margin-left: 5%;
+    position: fixed;
 }
 
 svg{
@@ -50,10 +58,12 @@ svg{
 button{
     font-weight: bold;
     color: white;
+    border: none;
 }
 
 .icon{
-    height: 6%;
+    height: 6vh;
+    min-height: 40px;
     border: none;
     text-align: left;
     display: block;
@@ -75,7 +85,6 @@ button:first-of-type{
     width: 80%;
     height: 5%;
     border-radius: 30px;
-    border: none;
     margin-left: 10%;
     margin-top: 5%;
 }
@@ -85,7 +94,6 @@ button:first-of-type{
     width: 15%;
     height: 40%;
     border-radius: 30px;
-    border: none;
     padding: 0;
     float: right;
 }
@@ -93,9 +101,11 @@ button:first-of-type{
 /* CONTAINER (MAIN/RIGHT) */
 
 .container{
-    height: 100%;
+    height: 100vh;
     width: 70%;
     background-color: orange;
+    margin-left: 25%;
+    position: absolute;
 }
 
 /* MAIN */
@@ -104,19 +114,23 @@ button:first-of-type{
     background-color: darkblue;
     width: 60%;
     border: 1px solid #2f3336;
+    height: 100vh;
 }
 
 .home{
     display: block;
     width: 42%;
     background-color: lightpink;
-    height: 5%;
+    height: 5vh;
+    min-height: 40px;
     position: fixed;
+    z-index: 2;
 }
 
 .happening{
     display: inline;
-    height: 11%;
+    height: 11vh;
+    min-height: 100px;
     width: 100%;
     border-bottom: 10px solid #202327;
 }
@@ -137,7 +151,8 @@ textarea:focus{
     margin: 0px 20px;
     text-align: justify;
     position: relative;
-    top: 6%
+    height: 100vh;
+    margin-top: 50px;
 }
 
 .timeline p{
@@ -148,8 +163,9 @@ textarea:focus{
 /* RIGHT */
 
 .right{
-    background-color: gray;
+    background-color: orange;
     width: 40%;
+    height: 100vh;
     /*padding: 0 2%;*/
 }
 
@@ -157,42 +173,71 @@ textarea:focus{
     display: block;
     width: 28%;
     background-color: magenta;
-    height: 5%;
+    height: 5vh;
+    min-height: 45px;
     position: fixed;
+    z-index: 2;
 }
 
 input#search{
     width: 80%;
     background-color: transparent;
-    border: ;
+    /*border: none;*/
     border-radius: 15px;
-    height: 70%;
-    margin-top: 2%;
-    margin-left: 9%;
+    height: 3vh;
+    min-height: 35px;
+    margin-top: 1vh;
+    margin-left: 10%;
 }
 
 #search:focus{
     border: 1px solid #17bf63;
 }
 
-#icon-search{
-    
-}
-
 .trends{
     display: block;
     position: relative;
-    top: 5%;
     background-color: teal;
-    height: 55%;
+    margin-top: 45px;
+    height: 55vh;
+    min-height: 500px;
     width: 100%;
 }
 
+.trends button{
+    background-color: rgba(216, 191, 216, 0.459);
+    width: 100%;
+    height: 8vh;
+    min-height: 70px;
+    line-height: 0vh;
+    text-align: left;
+    border-bottom: 1px solid #2f3336;
+}
+
+.trends h3{
+    font-weight: bold;
+}
+
+.show-more{  /*nao ta funfando*/
+    height: 2px;
+    padding: 0;
+    max-height: 2px;
+}
+
+
 .follow{
     display: block;
-    background-color: thistle;
-    position: relative;
-    top: 6%;
+    background-color: limegreen;
     height: 37%;
     width: 100%;
+}
+
+.follow button{
+    background-color: rgba(216, 191, 216, 0.459);
+    width: 100%;
+    height: 7vh;
+    min-height: 60px;
+    line-height: 0vh;
+    text-align: left;
+    border-bottom: 1px solid #2f3336;
 }
