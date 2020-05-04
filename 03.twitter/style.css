@@ -6,17 +6,12 @@
     font-weight: 400;
 }
 
-
 html, body{
     height: 100vh;
     width: 100%;
     margin: 0;
     background-color: #000000;
     color: #d9d9d9;
-}
-
-h3, h1{
-    margin-top: 5px;
 }
 
 h1{
@@ -31,27 +26,18 @@ h2{
     font-weight: bold;
 }
 
+h3, h1{
+    margin-top: 5px;
+}
 
 hr{
     border-color: #202327;
 }
 
-
-
 div{
     display: inline; /*?????????*/
     float: left;
     height: 100vh;
-}
-
-/* LEFT */
-
-.left{
-    /*background-color: rgb(89, 79, 235);*/
-    width: 20%;
-    height: 100vh;
-    margin-left: 5%;
-    position: fixed;
 }
 
 svg{
@@ -69,15 +55,6 @@ button{
     background-color: transparent;
 }
 
-
-.icon:hover{
-    color: #17bf63;
-}
-
-svg:hover{
-    fill: #17bf63;
-}
-
 .icon{
     height: 6vh;
     min-height: 40px;
@@ -87,15 +64,6 @@ svg:hover{
     display: block;
     width: 100%;
     /*background-color: wheat;*/
-}
-
-button:focus{
-    outline-width: 0;
-}
-
-button:first-of-type{
-    width: 23%;
-    padding-left: 5%;
 }
 
 .left .tweet-btn{
@@ -111,11 +79,20 @@ button:first-of-type{
 .happening .tweet-btn{
     background-color: #17bf63;
     width: 15%;
-    min-width: 60px;
-    height: 40%;
+    min-width: 30px;
+    height: 35%;
     border-radius: 30px;
     padding: 0;
     float: right;
+}
+
+.icons-happening{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.icons-happening svg{
+    fill: #17bf63;
 }
 
 .tweet-btn:hover{
@@ -124,6 +101,42 @@ button:first-of-type{
 
 .btn-tl{
     margin: 0;
+}
+
+.icon:hover{
+    color: #17bf63;
+}
+
+svg:hover{
+    fill: #17bf63;
+}
+
+button:focus{
+    outline-width: 0;
+}
+
+.right button{
+    /*background-color: rgba(18, 16, 156, 0.959);*/
+    width: 100%;
+    height: 8vh;
+    min-height: 70px;
+    line-height: 0vh;
+    text-align: left;
+    border-top: 1px solid #2f3336;
+}
+
+.right button:hover{
+    background-color: #222527;
+}
+
+/* LEFT */
+
+.left{
+    /*background-color: rgb(89, 79, 235);*/
+    width: 20%;
+    height: 100vh;
+    margin-left: 5%;
+    position: fixed;
 }
 
 /* CONTAINER (MAIN/RIGHT) */
@@ -146,19 +159,23 @@ button:first-of-type{
 .main{
     /*background-color: rgb(165, 165, 235);*/
     width: 60%;
-    border: 1px solid #2f3336;
+    border-left: 1px solid #2f3336;
+    border-right: 1px solid #2f3336;
     border-bottom: none;
     height: 100vh;
 }
 
 .home{
     display: block;
-    width: 42%;
+    width: 41.9%;
     background-color: black;
     height: 5vh;
     min-height: 40px;
     position: fixed;
     z-index: 2;
+    padding-left: 2%;
+    max-height: 45px;
+    border-right: 1px solid #2f3336;
 }
 
 .happening{
@@ -170,7 +187,8 @@ button:first-of-type{
 }
 
 textarea{
-    width: 100%;
+    margin-top: 1%;
+    width: 85%;
     background-color: transparent;
     color: white;
     border: none;
@@ -192,6 +210,8 @@ textarea:focus{
 #profile{
     position: absolute;
     bottom: 0;
+    z-index: 2;
+    background-color: black;
 }
 
 .pic-user{
@@ -217,6 +237,7 @@ textarea:focus{
     background-color: black;
     height: 5vh;
     min-height: 45px;
+    max-height: 45px;
     position: fixed;
     z-index: 2;
 }
@@ -230,6 +251,8 @@ input#search{
     min-height: 35px;
     margin-top: 5px;
     margin-left: 10%;
+    color: white;
+    padding-left: 10%;
 }
 
 #search:focus{
@@ -238,45 +261,40 @@ input#search{
 }
 
 #search::placeholder{
-    padding-left: 10%;
+    padding-left: 5px;
 }
 
 .trends{
     display: block;
     position: relative;
     /*background-color: teal;*/
-    margin-top: 45px;
+    margin-top: 60px;
     height: 40vh;
     min-height: 470px;
     width: 100%;
     min-width: 180px;
 }
 
-.right button{
-    /*background-color: rgba(18, 16, 156, 0.959);*/
-    width: 100%;
-    height: 8vh;
-    min-height: 70px;
-    line-height: 0vh;
-    text-align: left;
-    border-bottom: 1px solid #2f3336;
-}
-
-.right button:hover{
-    background-color: #222527;
-}
-
-.trends h3{
+.right h3{
     font-weight: bold;
 }
 
+.right p{
+    color: #747c85;
+    line-height: 50%;
+}
+
 .follow{
+    margin-top: 15%;
     display: block;
     /*background-color: limegreen;*/
     height: 37%;
     width: 100%;
     min-width: 300px;
+}
 
+.follow h3{
+    padding-top: 4%;
 }
     
 .nonsense{
