@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
 
 *{
     box-sizing: border-box;
@@ -26,9 +26,16 @@ h1{
 }
 
 h2{
-    margin: 0;
+    margin: 0 5%;
     font-size: 1em;
+    font-weight: bold;
 }
+
+
+hr{
+    border-color: #202327;
+}
+
 
 
 div{
@@ -40,7 +47,7 @@ div{
 /* LEFT */
 
 .left{
-    background-color: rgb(89, 79, 235);
+    /*background-color: rgb(89, 79, 235);*/
     width: 20%;
     height: 100vh;
     margin-left: 5%;
@@ -59,16 +66,27 @@ button{
     font-weight: bold;
     color: white;
     border: none;
+    background-color: transparent;
+}
+
+
+.icon:hover{
+    color: #17bf63;
+}
+
+svg:hover{
+    fill: #17bf63;
 }
 
 .icon{
     height: 6vh;
     min-height: 40px;
+    min-width: 40px ;
     border: none;
     text-align: left;
     display: block;
     width: 100%;
-    background-color: wheat;
+    /*background-color: wheat;*/
 }
 
 button:focus{
@@ -80,22 +98,32 @@ button:first-of-type{
     padding-left: 5%;
 }
 
-.left .tweet{
+.left .tweet-btn{
     background-color: #17bf63;
     width: 80%;
     height: 5%;
+    min-height: 45px;
     border-radius: 30px;
     margin-left: 10%;
     margin-top: 5%;
 }
 
-.happening .tweet{
+.happening .tweet-btn{
     background-color: #17bf63;
     width: 15%;
+    min-width: 60px;
     height: 40%;
     border-radius: 30px;
     padding: 0;
     float: right;
+}
+
+.tweet-btn:hover{
+    background-color:  #13af59;
+}
+
+.btn-tl{
+    margin: 0;
 }
 
 /* CONTAINER (MAIN/RIGHT) */
@@ -103,24 +131,30 @@ button:first-of-type{
 .container{
     height: 100vh;
     width: 70%;
-    background-color: orange;
+    /*background-color: orange;*/
     margin-left: 25%;
     position: absolute;
+    min-width: 300px;
+}
+
+.show-more{
+    color: #13af59;
 }
 
 /* MAIN */
 
 .main{
-    background-color: darkblue;
+    /*background-color: rgb(165, 165, 235);*/
     width: 60%;
     border: 1px solid #2f3336;
+    border-bottom: none;
     height: 100vh;
 }
 
 .home{
     display: block;
     width: 42%;
-    background-color: lightpink;
+    background-color: black;
     height: 5vh;
     min-height: 40px;
     position: fixed;
@@ -144,35 +178,43 @@ textarea{
 }
 
 textarea:focus{
-    /*outline-width: 0;*/
+    outline-width: 0;
 }
 
 .timeline{
     margin: 0px 20px;
-    text-align: justify;
+    text-align: left;
     position: relative;
     height: 100vh;
     margin-top: 50px;
 }
 
-.timeline p{
-    border-bottom: 1px solid #202327;
-    padding-bottom: 20px;
+#profile{
+    position: absolute;
+    bottom: 0;
+}
+
+.pic-user{
+    width: 50px;
+    margin-right: 5px;
+    display: inline;
+    float: left;
+    border-radius: 50px;
 }
 
 /* RIGHT */
 
 .right{
-    background-color: orange;
+    /*background-color: orange;*/
     width: 40%;
     height: 100vh;
-    /*padding: 0 2%;*/
+    padding: 0 2%;
 }
 
 .search{
     display: block;
-    width: 28%;
-    background-color: magenta;
+    width: 25%;
+    background-color: black;
     height: 5vh;
     min-height: 45px;
     position: fixed;
@@ -181,31 +223,37 @@ textarea:focus{
 
 input#search{
     width: 80%;
-    background-color: transparent;
-    /*border: none;*/
+    background-color: #202327;
+    border: none;
     border-radius: 15px;
     height: 3vh;
     min-height: 35px;
-    margin-top: 1vh;
+    margin-top: 5px;
     margin-left: 10%;
 }
 
 #search:focus{
     border: 1px solid #17bf63;
+    outline-color: transparent;
+}
+
+#search::placeholder{
+    padding-left: 10%;
 }
 
 .trends{
     display: block;
     position: relative;
-    background-color: teal;
+    /*background-color: teal;*/
     margin-top: 45px;
-    height: 55vh;
-    min-height: 500px;
+    height: 40vh;
+    min-height: 470px;
     width: 100%;
+    min-width: 180px;
 }
 
-.trends button{
-    background-color: rgba(216, 191, 216, 0.459);
+.right button{
+    /*background-color: rgba(18, 16, 156, 0.959);*/
     width: 100%;
     height: 8vh;
     min-height: 70px;
@@ -214,30 +262,33 @@ input#search{
     border-bottom: 1px solid #2f3336;
 }
 
+.right button:hover{
+    background-color: #222527;
+}
+
 .trends h3{
     font-weight: bold;
 }
 
-.show-more{  /*nao ta funfando*/
-    height: 2px;
-    padding: 0;
-    max-height: 2px;
-}
-
-
 .follow{
     display: block;
-    background-color: limegreen;
+    /*background-color: limegreen;*/
     height: 37%;
     width: 100%;
+    min-width: 300px;
+
+}
+    
+.nonsense{
+    margin-top: 2px;
+    width: 85%;
+    max-width: 400px;
+    border-radius: 15px;
 }
 
-.follow button{
-    background-color: rgba(216, 191, 216, 0.459);
-    width: 100%;
-    height: 7vh;
-    min-height: 60px;
-    line-height: 0vh;
-    text-align: left;
-    border-bottom: 1px solid #2f3336;
+.dwight{
+    display: block;
+    width: 85%;
+    height: 17vh;
+    min-height: 150px;
 }
