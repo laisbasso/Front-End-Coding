@@ -1,0 +1,102 @@
+.container-fluid{
+    margin-top: 80px;
+    margin-bottom: 1.5vh;;
+}
+
+footer{
+    background-color: #f8f9fa;
+    font-size: 0.805em;
+    height: 50px;
+}
+
+.card-body:last-of-type{
+    padding: 0;
+    text-align: center;
+    color: #b20000;
+}
+
+.card{
+    max-width: 100% !important;
+}
+
+.bg-primary{
+    background-color: #5579a6 !important;
+}
+
+.bg-danger{
+    background-color: #546e7a !important;
+}
+
+.form-inline{
+    display: none !important;
+}
+
+.input-group-append{
+    display: inline;
+    background-color: #b20000;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.navbar-toggler:focus{
+    outline-color: transparent;
+}
+
+.list-group-item{
+    background-color: #343a40 !important;
+    border: none;
+    color: #848688;
+}
+
+.list-group-item:hover, .list-group-item:focus{
+    color: white !important;
+}
+
+.right{
+    position: absolute;
+    right: 2%;
+}
+
+.text-muted{
+    position: absolute;
+    left: 2%;
+}
+
+.dropdown-toggle{
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-toggle:selected{
+    background-color: transparent;
+}
+
+.form-inline{
+    position: absolute;
+    right: 10%;
+}
+
+.mini{
+    width: 25px;
+    height: 25px;
+}
+
+@media (min-width: 768px){
+    .form-inline{
+        display: inline !important;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-toggler{
+        position: absolute;
+        right: 80%;
+    }
+}
