@@ -14,7 +14,7 @@
     z-index: 999;
     background: #7386D5;
     color: #fff;
-    transition: all 0.3s !important;
+    transition: all 0.3s;
 }
 
 .container-fluid{
@@ -82,6 +82,14 @@ footer{
     border: none;
 }
 
+.btn-secondary{
+    background-color: transparent !important;
+}
+
+.btn-secondary:focus{
+    outline-color: none !important;
+}
+
 .dropdown-toggle:selected{
     background-color: transparent;
 }
@@ -99,6 +107,10 @@ footer{
 .return{
     width: 20px;
     height: 20px;
+}
+
+.full-width{
+    width: 100%;
 }
 
 /* STATIC */
@@ -146,11 +158,6 @@ footer{
     width: 100%;
     margin-top: 5%;
 }
-
-
-
-
-
 
 /* MEDIA */
 
