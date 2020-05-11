@@ -25,7 +25,6 @@
 footer{
     background-color: #f8f9fa;
     font-size: 0.805em;
-    height: 50px;
 }
 
 #grumpy{
@@ -78,17 +77,6 @@ footer{
     color: white !important;
 }
 
-/*
-.right{
-    position: absolute;
-    right: 2%;
-}
-
-.text-muted{
-    position: absolute;
-    left: 2%;
-}*/
-
 .dropdown-toggle{
     background-color: transparent;
     border: none;
@@ -106,6 +94,11 @@ footer{
 .mini{
     width: 25px;
     height: 25px;
+}
+
+.return{
+    width: 20px;
+    height: 20px;
 }
 
 /* STATIC */
@@ -131,10 +124,28 @@ footer{
     height: 350px;
 }
 
+.padding-top{
+    padding-top: 5%;
+}
 
+/* LOGIN */
 
+.bg-blue{
+    background-color: #007bff;
+    height: 100vh;
+}
 
+.smaller-header-card{
+    font-size: 2em;
+    padding: 5%;
+}
 
+/* REGISTER */
+
+.full-width-btn{
+    width: 100%;
+    margin-top: 5%;
+}
 
 
 
